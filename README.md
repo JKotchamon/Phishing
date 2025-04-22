@@ -109,7 +109,7 @@ Phishing emails often include malicious content such as email attachments or emb
 - [`emldump.py`](https://github.com/DidierStevens/DidierStevensSuite/blob/master/emldump.py) – for parsing `.eml` files and extracting email parts for inspection
 - [`oledump.py`](https://github.com/DidierStevens/DidierStevensSuite/blob/master/oledump.py) – for analyzing OLE files (like Word/Excel docs) for malicious macros or embedded content
 - [`Email-IOC-Extractor`](https://github.com/MalwareCube/Email-IOC-Extractor) – for extracting indicators of compromise (IOCs) such as URLs, IPs, and hashes from email files
-- 
+- [VirusTotal](https://www.virustotal.com/gui/home/upload)
 ---
 ### 📄 5.4 PDF File Analysis
 
