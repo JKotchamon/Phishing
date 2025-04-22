@@ -56,14 +56,24 @@ Each step can be inspected for anomalies when analyzing a suspicious email.
 
 When analyzing a suspicious email, look at:
 
-- **Date and Time** of delivery
-- **Subject** line relevance
-- **Recipient**: Who was targeted
-- **Claimed Sender** vs. actual sender
-- **Sender's Email Address**
-- **SPF, DKIM, DMARC** status
-- **Email Body Content**
-- **Links and Attachments** in the email
+### 🔍 Key Elements to Analyze:
+
+- **📅 Date and Time**: When was the email sent?
+- **📨 Subject Line**: Is it misleading or overly urgent?
+- **👥 Recipient**: Was it sent to a large group or a specific person?
+- **👤 Claimed Sender vs Real Sender**: Do the display name and email address match?
+- **📧 Return Path / From Address**: Check for discrepancies or lookalike domains.
+- **🔐 Authentication Results**:
+  - **SPF (Sender Policy Framework)** – validates sending IP
+  - **DKIM (DomainKeys Identified Mail)** – verifies message integrity
+  - **DMARC (Domain-based Message Authentication, Reporting, and Conformance)** – alignment of SPF and DKIM
+- **📝 Email Body**:
+  - Is the tone urgent or threatening?
+  - Are there grammar or spelling errors?
+  - Does it request credentials or personal info?
+- **🔗 URL Links & Attachments**:
+  - Are there shortened or suspicious links?
+  - Are there unexpected attachments?
 
 ### 5.1 Useful Tools for Analysis
 
@@ -75,6 +85,31 @@ When analyzing a suspicious email, look at:
 - 📡 [Talos Intelligence](https://talosintelligence.com/) – Domain/IP reputation
 
 ---
+### 📨 Email Body & Header Decoding
+- [CyberChef](https://gchq.github.io/CyberChef/)
+
+### 🌐 URL and Link Analysis
+- [urlscan.io](https://urlscan.io/)
+- [VirusTotal](https://www.virustotal.com/gui/home/upload)
+- [Cisco Talos Intelligence](https://talosintelligence.com/)
+
+---
+
+### 🧪 5.2 Dynamic Attachment Analysis and Sandboxing
+
+Attachments may contain malicious scripts or executables. Use sandbox environments:
+
+- [Hybrid Analysis](https://hybrid-analysis.com/)
+- [ANY.RUN](https://app.any.run/)
+
+---
+
+### 📄 5.3 PDF File Analysis
+
+Phishing emails often include malicious PDFs. Use these open-source tools:
+
+- [`pdf-parser.py`](https://github.com/DidierStevens/DidierStevensSuite/blob/master/pdf-parser.py) — for analyzing structure and objects in PDF files  
+- [`pdfid.py`](https://github.com/DidierStevens/DidierStevensSuite/blob/master/pdfid.py) — for identifying suspicious elements in PDF files
 
 ## 6️⃣ Phishing Defense Strategies
 
