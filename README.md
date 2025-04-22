@@ -103,8 +103,17 @@ Attachments may contain malicious scripts or executables. Use sandbox environmen
 - [ANY.RUN](https://app.any.run/)
 
 ---
-
-### 📄 5.3 PDF File Analysis
+### 🧪 5.3 Dynamic Attachment Analysis and Sandboxing
+Extract file 
+- python3 ../Tools/emldump.py challenge3.eml -s 5 -d > AR_Wedding_RSVP.docm
+Static Mail analysis
+- python3 eioc.py ../Challenges/challenge3.eml
+- python3 ../Tools/oledump.py AR_Wedding_RSVP.docm -s 3
+Using analysis file tools
+-using sha256, md5
+[VirusTotal](https://www.virustotal.com/gui/home/upload)
+---
+### 📄 5.4 PDF File Analysis
 
 Phishing emails often include malicious PDFs. Use these open-source tools:
 
