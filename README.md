@@ -127,3 +127,14 @@ Phishing emails often include malicious PDFs. Use these open-source tools:
 - **User Training**: Educate users to recognize phishing attempts.
 
 ---
+
+# Phishing Analysis Practice
+
+This project is created for practicing phishing email and phishing website analysis.  
+It includes experiments and notes based on phishing data collected from open sources and honeypots.
+
+## Sources Used
+- [phishing_pot by rf-peixoto](https://github.com/rf-peixoto/phishing_pot/) — Honeypot to collect phishing emails.
+- [PhishTank](https://phishtank.org/) — Community-based phishing website database.
+- [Abuse.ch MalwareBazaar](https://bazaar.abuse.ch/) — Repository of malware samples, including phishing-related malware.
+
